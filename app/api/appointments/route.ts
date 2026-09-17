@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getRequestHost } from '../../../lib/public-api';
 
-const apiBaseUrl = process.env.GLOBILL_API_URL ?? process.env.NEXT_PUBLIC_API_URL ?? 'https://localhost:57172';
+const apiBaseUrl = process.env.GLOBILL_API_URL ?? process.env.NEXT_PUBLIC_API_URL ?? 'https://globill-api-production.up.railway.app';
 
 export async function POST(request: Request) {
   const host = await getRequestHost();

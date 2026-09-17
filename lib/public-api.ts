@@ -1,7 +1,7 @@
 import { headers } from 'next/headers';
 import type { PublicDoctor, PublicLocation, PublicPage, PublicService, PublicWebsite } from '../types/public';
 
-const apiBaseUrl = process.env.GLOBILL_API_URL ?? process.env.NEXT_PUBLIC_API_URL ?? 'https://localhost:57172';
+const apiBaseUrl = process.env.GLOBILL_API_URL ?? process.env.NEXT_PUBLIC_API_URL ?? 'https://globill-api-production.up.railway.app';
 
 export async function getRequestHost() {
   const headerStore = await headers();
